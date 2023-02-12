@@ -1,0 +1,634 @@
+/* ------------------- Navbar CSS ------------------- */
+:root {
+  --bs-btn-hover-bg: #00000045 !important;
+}
+
+body {
+  margin: 0;
+  top: 10px;
+}
+
+.bi,
+.nav-link,
+.bi-person-circle,
+.show,
+.dropdown-toggle {
+  color: white !important;
+}
+
+.dropdownButton {
+  color: rgb(252, 186, 3) !important;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0 !important;
+  --bs-navbar-color: rgb(255 255 255 / 100%) !important;
+  --bs-navbar-hover-color: rgb(255 255 255 / 50%) !important;
+  margin-bottom: 2vh;
+  background: linear-gradient(
+    to right,
+    rgba(0, 57, 131, 1),
+    rgba(0, 135, 112, 1)
+  ) !important;
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-y: 0 !important;
+}
+
+.navSpace {
+  margin-left: 7px;
+}
+
+.teckyLogo {
+  margin: 7px 7px;
+  /* margin-left: 1vw; */
+  height: 50px;
+  /* color: rgb(255 255 255 / 100%) !important; */
+}
+
+.allProductLink {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.btn {
+  color: white !important;
+  border: 2px solid #ffffff !important;
+}
+
+.btn-outline-success {
+  --bs-btn-hover-bg: #50bb89 !important;
+  --bs-btn-active-bg: #50bb89 !important;
+}
+
+.nav-item .dropdown {
+  position: relative;
+  margin-left: 20px !important;
+}
+
+.d-flex {
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0px;
+  left: auto !important;
+  --bs-dropdown-link-hover-color: #ffc107 !important;
+  --bs-dropdown-link-hover-bg: #ffffff00 !important;
+  --bs-dropdown-link-active-color: #ffc107 !important;
+  --bs-dropdown-link-active-bg: #ffffff00 !important;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.bi-box-arrow-in-right {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.bi-person-circle {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.logout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#userbutton {
+  display: none;
+}
+
+#loginbutton {
+  display: flex;
+}
+
+.user-dropdown {
+  display: flex;
+  align-items: center;
+}
+#search-bar-form {
+  position: relative;
+}
+
+.search-bar-recommend {
+  position: absolute;
+  top: 42px;
+  background-color: #ffffff;
+  width: 500px;
+  height: auto;
+  z-index: 99;
+}
+
+.recommend-product-img {
+  width: 50px;
+}
+
+.recommend-product-name {
+  margin-left: 17px;
+}
+.recommend-product-price {
+  margin-left: 7px;
+}
+
+.recommend-product-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.recommend-product-container:hover {
+  background-color: #cccccc;
+}
+
+/* ------------------- Navbar CSS ------------------- */
+
+.divContainer {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.bottomArea {
+  background: linear-gradient(
+    to right,
+    rgba(0, 57, 131, 1),
+    rgba(0, 135, 112, 1)
+  );
+  width: 100vw;
+  height: 20vh;
+  left: 0;
+  bottom: 0;
+}
+
+#container1 {
+  font-family: "Caveat", cursive;
+  font-size: 4vh;
+  color: #ffc107;
+}
+
+#container2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+#productImage {
+  border: 3px solid rgb(0, 58, 131);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 55vh;
+  min-width: 25vw;
+  margin-top: 5vh;
+  flex: 1;
+}
+
+.displaying {
+  width: 85%;
+}
+
+#productContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 2.5;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+
+#productName {
+  border: 3px solid rgb(0, 58, 131);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  font-family: "Caveat", cursive;
+  font-size: 5vh;
+  width: 100%;
+}
+
+#productPrice {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#price {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Caveat", cursive;
+  font-size: 4vh;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+#status,
+#productQuantity,
+#decision {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+}
+
+#showStock,
+#showSales {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid rgb(0, 58, 131);
+  width: 49%;
+  border-radius: 10px;
+  font-family: "Caveat", cursive;
+  font-size: 3vh;
+}
+
+#stock,
+#stockNumber {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  font-family: "Caveat", cursive;
+  font-size: 3vh;
+}
+
+#quantityBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 3px solid rgb(0, 58, 131);
+  width: 49%;
+  border-radius: 10px;
+  font-family: "Caveat", cursive;
+  font-size: 3vh;
+}
+
+#quantityBox,
+#quantityNumber,
+#buyNow {
+  display: flex;
+  justify-content: space-around;
+  border: 3px solid rgb(0, 58, 131);
+  width: 49%;
+  border-radius: 10px;
+  font-family: "Caveat", cursive;
+  font-size: 3vh;
+}
+
+#quantityNumber {
+  padding: 1vw;
+}
+
+#sales {
+  /* border: 1px solid black; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  font-size: 25px;
+}
+
+#salesNumber {
+  /* border: 1px solid black; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  font-size: 25px;
+  overflow: auto;
+}
+
+#minus,
+#plus {
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 2px;
+}
+
+.bye {
+  color: black !important;
+  box-sizing: border-box;
+  /* border: 1px solid black; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 2px;
+}
+
+.bi:hover,
+.addToCar:hover {
+  color: white !important;
+}
+
+#commentButton {
+  font-size: 3vh;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+#commentButton:hover {
+  color: white;
+}
+
+#commentButton:active {
+  color: white;
+}
+
+#minusButton:hover,
+#plusButton:hover,
+.addToCar:hover, #commentButton:hover {
+  background-color: rgb(0, 112, 118);
+}
+
+#minusButton:active,
+#plusButton:active,
+.addToCar:active,#commentButton:active {
+  background-color: #979797;
+}
+
+#minusButton,
+#plusButton {
+  border: 3px solid rgb(0, 58, 131);
+  flex: 0.7;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  border-radius: 10px;
+  margin-right: 2px;
+  background-color: white;
+  padding: 0 !important;
+}
+
+#number {
+  border: 3px solid rgb(0, 58, 131);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+#decision{
+  display: flex;
+  justify-content: center;
+}
+
+.addToCar {
+  border: 3px solid rgb(0, 58, 131);
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 4vh;
+  background-color: white;
+}
+
+#conatiner3 {
+  border: 3px solid rgb(0, 58, 131);
+  border-radius: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 30vh;
+  padding: 10px;
+  font-family: "Caveat", cursive;
+  font-size: 3vh;
+  margin-bottom: 3vh;
+}
+
+#description {
+  height: 25%;
+}
+
+#commentBox {
+  display: flex;
+  align-items: center;
+  border: 3px solid rgb(0, 58, 131);
+  border-radius: 10px;
+  justify-content: space-around;
+  border-radius: 20px;
+  margin-bottom: 3vh;
+}
+
+#rates {
+  /* border: 1px solid black; */
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+#seeCommentPart {
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+#contact-form3 {
+  flex: 2;
+}
+
+#commentSide {
+  /* border: 1px solid black; */
+  flex-direction: column;
+  flex: 3;
+}
+
+#SeeMore {
+  font-size: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#rightArrowIcon {
+  display: flex;
+  flex: 1;
+}
+
+#arrow {
+  background-color: rgb(0, 112, 118)!important;
+}
+
+#CommentPart {
+  display: flex;
+  padding: 5px;
+  height: 80%;
+}
+
+#inputScore{
+  margin-left: 2vw;
+}
+
+#commentBox2 {
+  height: 100%;
+  flex: 2;
+  padding: 5px;
+}
+
+#textarea {
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+
+#button {
+  /* border: 1px solid black; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container5 {
+  border: 3px solid rgb(0, 58, 131);
+  border-radius: 10px;
+  height: 40vh;
+  overflow-y: auto;
+}
+
+.eachComment {
+  /* background-color: green; */
+  border: 1px solid black;
+  margin: 5px;
+  height: 47.5%;
+  overflow-y: auto;
+  border-radius: 5px;
+  background-color: #ffd762;
+}
+
+#container6 {
+  /* background-color: red; */
+  padding: 20px;
+}
+
+#promotionWord {
+  font-weight: bolder;
+  font-size: 2vh;
+}
+
+#container7 {
+  /* background-color: #50bb89; */
+  padding: 10px;
+  height: 400px;
+}
+
+#productSuggestion {
+  display: flex;
+  /* border: 1px solid black; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+/* ................................................ */
+
+@media screen and (max-width: 480px) {
+  /* #displayImage {
+        max-width: 100%;
+        max-height: auto;
+    } */
+
+  .displaying {
+    width: 50px;
+  }
+
+  #productImage {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 600px;
+    /* border: 1px solid black; */
+    /* background-color: #ffc107; */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+  }
+  .carouselPicture {
+    width: 380px;
+  }
+  #container7 {
+    /* background-color: #50bb89; */
+    padding: 10px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #displayImage {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  #productImage {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 600px;
+    border: 3px solid rgb(0, 58, 131);
+    /* background-color: #ffc107; */
+    margin: 10px;
+    padding: 30px;
+    border-radius: 30px;
+  }
+}

@@ -1,0 +1,362 @@
+/* ------------------- Navbar CSS ------------------- */
+:root {
+  --bs-btn-hover-bg: #00000045 !important;
+}
+
+body {
+  margin: 0;
+  top: 10px;
+}
+
+.bi,
+.nav-link,
+.bi-person-circle,
+.show,
+.dropdown-toggle {
+  color: white !important;
+}
+
+.dropdownButton {
+  color: rgb(252, 186, 3) !important;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0 !important;
+  --bs-navbar-color: rgb(255 255 255 / 100%) !important;
+  --bs-navbar-hover-color: rgb(255 255 255 / 50%) !important;
+  margin-bottom: 2vh;
+  background: linear-gradient(
+    to right,
+    rgba(0, 57, 131, 1),
+    rgba(0, 135, 112, 1)
+  ) !important;
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-y: 0 !important;
+}
+
+.navSpace {
+  margin-left: 7px;
+}
+
+.teckyLogo {
+  margin: 7px 7px;
+  /* margin-left: 1vw; */
+  height: 50px;
+  /* color: rgb(255 255 255 / 100%) !important; */
+}
+
+.allProductLink {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.btn {
+  color: white !important;
+  border: 2px solid #ffffff !important;
+}
+
+.btn-outline-success {
+  --bs-btn-hover-bg: #50bb89 !important;
+  --bs-btn-active-bg: #50bb89 !important;
+}
+
+.nav-item .dropdown {
+  position: relative;
+  margin-left: 20px !important;
+}
+
+.d-flex {
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0px;
+  left: auto !important;
+  --bs-dropdown-link-hover-color: #ffc107 !important;
+  --bs-dropdown-link-hover-bg: #ffffff00 !important;
+  --bs-dropdown-link-active-color: #ffc107 !important;
+  --bs-dropdown-link-active-bg: #ffffff00 !important;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.bi-box-arrow-in-right {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.bi-person-circle {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.logout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#userbutton {
+  display: none;
+}
+
+#loginbutton {
+  display: flex;
+}
+
+.user-dropdown {
+  display: flex;
+  align-items: center;
+}
+#search-bar-form {
+  position: relative;
+}
+
+.search-bar-recommend {
+  position: absolute;
+  top: 42px;
+  background-color: #ffffff;
+  width: 500px;
+  height: auto;
+  z-index: 99;
+}
+
+.recommend-product-img {
+  width: 50px;
+}
+
+.recommend-product-name {
+  margin-left: 17px;
+}
+.recommend-product-price {
+  margin-left: 7px;
+}
+
+
+.recommend-product-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.recommend-product-container:hover {
+  background-color: #CCCCCC;
+}
+
+/* ------------------- Navbar CSS ------------------- */
+  
+  .login-page-container {
+    margin: 12px;
+    text-align: start;
+    font-size: 34px;
+  }
+
+.sign-in-sign-up-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 60px;
+}
+
+.sign-in-container {
+  border: 1px solid #000000;
+  width: 400px;
+  height: 500px;
+  margin:0;
+  /* margin-left: 70px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-container {
+  border: 1px solid #000000;
+  width: 400px;
+  height: 500px;
+  margin:0;
+  border-left: 0;
+  /* margin-right: 70px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-login {
+  border: #AAAAAA 1px solid;
+  border-radius: 30px;
+  width: 340px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+
+.google-icon {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.or-middleline {
+  color: #000000;
+  font-size: 27px; 
+}
+  .or-middleline:after,
+  .or-middleline:before{
+    color: #AAAAAA;
+    content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    text-decoration:line-through;
+}
+
+
+
+.sign-in-email {
+  margin-top: 10px;
+  border-top: 0!important;
+  border-right: 0!important;
+  border-left: 0!important;
+  font-size: 30px;
+  width: 340px;
+  height: 64px;
+}
+.sign-in-password {
+  margin-top: 10px;
+  border-top: 0!important;
+  border-right: 0!important;
+  border-left: 0!important;
+  font-size: 30px;
+  width: 340px;
+  height: 64px;
+}
+
+.sign-in-submit {
+  margin-top: 10px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(to right, #053A83, #288670);
+  color: #FFFFFF;
+  width: 90px;
+  height: 50px;
+  font-size: 24px;
+}
+
+.sign-up-button {
+  margin-top: 50px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(to right, #053A83, #288670);
+  width: 110px;
+  height: 54px;
+  font-size: 24px;
+}
+
+.sign-up-button a:hover {
+  color: #FFFFFF;
+}
+
+.sign-up-link-text {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .sign-in-container {
+    border: 1px solid #000000;
+    width: 700px;
+    height: 500px;
+    margin: 0 70px;
+  }
+
+  .sign-up-container {
+    border: 1px solid #000000;
+    width: 700px;
+    height: 500px;
+    margin: 0 70px;
+    margin-top: 20px;
+  }
+
+  .sign-in-email {
+    margin-top: 10px;
+    border-top: 0!important;
+    border-right: 0!important;
+    border-left: 0!important;
+    width: 57vw;
+    font-size: 30px;
+  }
+  .sign-in-password {
+    margin-top: 10px;
+    border-top: 0!important;
+    border-right: 0!important;
+    border-left: 0!important;
+    width: 57vw;
+    font-size: 30px;
+  }
+  .or-middleline {
+    font-size: 5vw;
+  }
+  .google-login {
+    width: 60vw;
+  }
+
+  .navbar-nav .me-auto .mb-2 .mb-lg-0 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0!important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+.dropdown-menu {
+  position: absolute;
+  left: 0!important;
+}
+}
+
+header {
+  margin: auto 60px
+}

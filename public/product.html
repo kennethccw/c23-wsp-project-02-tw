@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="/product.css" />
+  <link rel="stylesheet" href="/user/index.css">
+  <title>Product Page</title>
+</head>
+
+<body>
+
+  <!-- NAV BAR -->
+  <nav class="navbar navbar-expand-md bg-light">
+    <div class="container-fluid">
+      <a href="/"><img class=" teckyLogo" src="./indexImages/teckyLogo.png" /></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item navSpace">
+            <a class="allProductLink" href="/allCategory.html">All Prodcuts</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" id="search-bar-form">
+          <input class="form-control me-2 search-bar-input" type="search" placeholder="Search" aria-label="Search"
+            autocomplete="off" name="searchBarInput" />
+          <div class="search-bar-recommend" hidden></div>
+          <button class="btn btn-outline-success" type="submit">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+        <li class="nav-item" id="loginbutton">
+          <a class="login-container" href="./login.html">
+            <i class="bi bi-box-arrow-in-right"></i>
+            <div class="nav-link">Login</div>
+          </a>
+        </li>
+        <div class="dropdown-container" id="userbutton">
+          <li class="nav-item dropdown user-container">
+            <a class="nav-link dropdown-toggle user-dropdown" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false"><i class="bi bi-person-circle"></i>
+              <span class="username"></span>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li class="profile-container">
+                <i class="bi bi-file-earmark-person dropdownButton"></i><a class="dropdown-item profilebutton"
+                  href="#">Profile</a>
+              </li>
+              <li class="cart-container">
+                <i class="bi bi-cart4 dropdownButton"></i><a class="dropdown-item" href="./cart.html">Shopping
+                  Cart</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="logout-container">
+                <i class="bi bi-box-arrow-left dropdownButton"></i><a class="dropdown-item logoutbutton"
+                  href="#">Logout</a>
+              </li>
+            </ul>
+          </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END OF NAV BAR -->
+
+  <div class="divContainer">
+
+  <div id="container1">Category</div>
+
+  <div id="container2">
+    <div id="productImage"></div>
+
+    <div id="productContent">
+      <div id="productName"> </div>
+      <div id="productPrice">
+        <div id="price">
+          <div id="moneySign">HKD</div>
+          <div id="pricePerGoods">
+          </div>
+        </div>
+        <div id="status">
+          <div id="showStock">
+            <div id="stock">Stock</div>
+            <div id="stockNumber"></div>
+          </div>
+          <div id="showSales">
+            <div id="sales">Sales</div>
+            <div id="salesNumber"></div>
+          </div>
+
+
+        </div>
+      </div>
+      <div id="productQuantity">
+        <div id="quantityBox">Quantity</div>
+        <div id="quantityNumber">
+          <div id="minus"><button id="minusButton" min="1"><i class="bi bi-dash-lg bye"></i></button></div>
+          <div id="number">1</div>
+          <div id="plus"><button id="plusButton" max="10"><i class="bi bi-plus-lg bye"></i></button></div>
+        </div>
+      </div>
+
+      <div id="decision">
+        <div id="addToCar"><button class="addToCar">Add to Cart</button></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="conatiner3">
+    <div id="description">Product Description:</div>
+    <div id="details">This product is cola!</div>
+  </div>
+
+
+  <div id="conatiner4">
+    <div id="commentBox">
+      <div id="rates">4.6</div>
+      <div id="commentSide">
+        <div id="seeCommentPart">
+          <div id="SeeMore">See more comments</div>
+          <div id="rightArrowIcon"><button id="arrow"><i class="bi bi-arrow-right"></i></button></div>
+        </div>
+        <form id="contact-form3">
+          <div id="inputScore">
+            <label for="option">Please, Rate Us! </label>
+            <select id="option">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div id="CommentPart">
+            <div id="commentBox2">
+              <textarea name="comment" cols="20" rows="9" placeholder="leave your comment here"
+                id="textarea"></textarea>
+            </div>
+            <div id="button"><button id="commentButton">submit</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="container5">
+    <div class="eachComment">good</div>
+    <div class="eachComment">bad</div>
+    <div class="eachComment">ok</div>
+    <div class="eachComment">ok</div>
+  </div>
+
+  <div id="container6">
+    <div id="promotionWord">Similar Products You May Like: </div>
+  </div>
+
+  <div id="container7">
+    <div id="productSuggestion">
+      <div class="divContainer">
+        <div class="carouselArea">
+          <div class="myCarousel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img class="carouselPicture" src="./indexImages/carousel1.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img class="carouselPicture" src="./indexImages/carousel2.jpg" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img class="carouselPicture" src="./indexImages/carousel3.png" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+        </script>
+      <script type="module" src="./product.js"></script>
+
+
+</body>
+
+</html>

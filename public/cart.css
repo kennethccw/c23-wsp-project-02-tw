@@ -1,0 +1,571 @@
+/* ------------------- Navbar CSS ------------------- */
+:root {
+  --bs-btn-hover-bg: #00000045 !important;
+}
+
+body {
+  margin: 0;
+  top: 10px;
+}
+
+.bi,
+.nav-link,
+.bi-person-circle,
+.show,
+.dropdown-toggle {
+  color: white !important;
+}
+
+.dropdownButton {
+  color: rgb(252, 186, 3) !important;
+}
+
+.navbar {
+  --bs-navbar-padding-y: 0 !important;
+  --bs-navbar-color: rgb(255 255 255 / 100%) !important;
+  --bs-navbar-hover-color: rgb(255 255 255 / 50%) !important;
+  margin-bottom: 2vh;
+  background: linear-gradient(
+    to right,
+    rgba(0, 57, 131, 1),
+    rgba(0, 135, 112, 1)
+  ) !important;
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-y: 0 !important;
+}
+
+.navSpace {
+  margin-left: 7px;
+}
+
+.teckyLogo {
+  margin: 7px 7px;
+  /* margin-left: 1vw; */
+  height: 50px;
+  /* color: rgb(255 255 255 / 100%) !important; */
+}
+
+.allProductLink {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.btn {
+  color: white !important;
+  border: 2px solid #ffffff !important;
+}
+
+.btn-outline-success {
+  --bs-btn-hover-bg: #50bb89 !important;
+  --bs-btn-active-bg: #50bb89 !important;
+}
+
+.nav-item .dropdown {
+  position: relative;
+  margin-left: 20px !important;
+}
+
+.d-flex {
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0px;
+  left: auto !important;
+  --bs-dropdown-link-hover-color: #ffc107 !important;
+  --bs-dropdown-link-hover-bg: #ffffff00 !important;
+  --bs-dropdown-link-active-color: #ffc107 !important;
+  --bs-dropdown-link-active-bg: #ffffff00 !important;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.bi-box-arrow-in-right {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.bi-person-circle {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.logout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#userbutton {
+  display: none;
+}
+
+#loginbutton {
+  display: flex;
+}
+
+.user-dropdown {
+  display: flex;
+  align-items: center;
+}
+#search-bar-form {
+  position: relative;
+}
+
+.search-bar-recommend {
+  position: absolute;
+  top: 42px;
+  background-color: #ffffff;
+  width: 500px;
+  height: auto;
+  z-index: 99;
+}
+
+.recommend-product-img {
+  width: 50px;
+}
+
+.recommend-product-name {
+  margin-left: 17px;
+}
+.recommend-product-price {
+  margin-left: 7px;
+}
+
+.recommend-product-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.recommend-product-container:hover {
+  background-color: #cccccc;
+}
+
+/* ------------------- Navbar CSS ------------------- */
+
+.divContainer {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+#container1 {
+  height: 15vh;
+  font-size: 5vh;
+  
+}
+
+#shoppingCart {
+  font-family: "Caveat", cursive;
+  font-size: 6vmin;
+  color: #ffc107;
+}
+
+#totalQuantity {
+  font-family: "Caveat", cursive;
+  font-size: 4vmin;
+  color: #ffc107;
+}
+
+.container2_1 {
+  border: 3px solid rgb(0, 93, 123);
+  border-radius: 15px;
+  margin-top: 20px;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+
+#container3 {
+  border-radius: 10px;
+  background-image: linear-gradient(to right, #0062ce, #007d72);
+  position: relative;
+  height: 10vh;
+  display: flex;
+  bottom: 1vh;
+}
+#container4{
+  height: 1vh;
+}
+
+.leftBox {
+  /* border: 3px solid blue; */
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.rightBox {
+  /* border: 3px solid orange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+}
+
+.smallcheckbox {
+  width: 30px;
+  height: 30px;
+}
+
+.productImage {
+ max-width: 30vw;
+}
+
+.image1 {
+  max-width: 100%;
+}
+
+.upper {
+  display: flex;
+  justify-content: center;
+  font-family: "Caveat", cursive;
+  font-size: 4vh;
+  color: #ffc107;
+  min-width: 100%;
+}
+
+.lower {
+  /* border: 1px solid black; */
+  margin: 2.5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+}
+
+.left {
+  flex: 1;
+  border: 3px solid rgb(0, 93, 123);
+  height: 8.5vh;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 10%;
+}
+
+.currencySign {
+  font-family: "Caveat", cursive;
+  font-size: 4vmin;
+}
+
+.unitPrice {
+  font-family: "Caveat", cursive;
+  font-size: 4vmin;
+}
+
+.right {
+  flex: 1;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 10%;
+}
+
+.minus,
+.unit,
+.plus {
+  flex: 1;
+  /* background-color: #ffc107; */
+  max-height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+
+}
+
+.minusButton,
+.plusButton {
+  font-size: 5vh;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: rgb(0, 112, 118);
+  color: white;
+}
+
+.unit {
+  font-family: "Caveat", cursive;
+  font-size: 4vh;
+}
+
+#leftPart {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+}
+
+#rightPart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 2;
+  height: 100%;
+}
+
+#all{
+display: flex;
+font-size: 4vmin;
+font-family: "Caveat", cursive;
+color: white;
+}
+
+#confirmPart {
+display: flex;
+}
+
+#checkAll,
+#deleteSome {
+  height: 3vh;
+  width: 3vw;
+  font-family: "Caveat", cursive;
+  font-size: 4vmin;
+}
+
+#confirmation {
+min-width: 10vw;
+font-family: "Caveat", cursive;
+  font-size: 4vmin;
+  border-radius: 15px;
+}
+
+label {
+  
+  font-size: 2vh;
+}
+
+
+#totalMark {
+  font-size: 6vmin;
+  font-family: "Caveat", cursive;
+  color: white;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#currencyS {
+  font-size: 6vmin;
+  font-family: "Caveat", cursive;
+  color: white;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#money {
+  font-size: 6vmin;
+  font-family: "Caveat", cursive;
+  color: white;
+  font-weight: bold;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#bill {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-button {
+  font-size: 4vmin;
+  font-family: "Caveat", cursive;
+  border-radius: 15px;
+}
+
+
+
+
+.remove{
+  display: none;
+}
+
+
+
+
+
+
+
+/* ................................................. */
+@media screen and (max-width:480px) {
+
+
+  .smallcheckbox {
+    width: 15px;
+    height: 15px;
+  }
+
+  .container2_1 {
+    border: 3px solid rgb(0, 93, 123);
+    margin-top: 20px;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #container3 {
+    background-image: linear-gradient(to right, #0062ce, #007d72);
+    position: relative;
+    height: 10vh;
+    display: flex;
+    top: 20vh;
+  }
+
+  .currencySign {
+    /* border: 1px solid black; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .unitPrice {
+    /* border: 1px solid black; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .minusButton,
+  .plusButton {
+    height: 7vh;
+    max-width: 6vw;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(0, 112, 118);
+    color: white;
+  }
+
+  .unit {
+    font-size: 20px;
+  }
+
+  #container3 {
+    position: relative;
+    height: 10vh;
+    display: flex;
+    top: 20vh;
+  }
+
+  #totalMark {
+    font-size: 30px;
+    flex: 1;
+  }
+
+  #currencyS {
+    font-size: 30px;
+    flex: 1;
+  }
+
+  #money {
+    font-size: 30px;
+    font-weight: bold;
+    flex: 1;
+  }
+
+  #bill {
+    /* border: 1px solid black; */
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .billButton {
+    height: 60px;
+    width: 150px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 40px;
+  }
+
+
+  #leftPart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    /* background-color: red; */
+    /* border: 1px solid black; */
+    height: 100%;
+  }
+
+
+  #rightPart {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 2;
+    /* border: 1px solid black; */
+    height: 100%;
+    padding: 10px;
+  }
+
+ 
+  
+  #confirmation {
+    min-width: 10vw;
+    font-size: 4vmin;
+    border-radius: 15px;
+  }
+
+}
